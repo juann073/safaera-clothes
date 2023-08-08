@@ -2,18 +2,22 @@ import CartWidget from "../cartWidget/CartWidget"
 
 const NavBar = () => {
     return (
-        <ul className="grid gap-5 row-gap-3 nav">
+        <nav className="fs-5">
+            <ul className="grid gap-5 row-gap-3 nav nav-pills">
             <li className="nav-item">
-                <a className="btn btn-primary position-relative" data-toggle="tab" href="#">Home</a>
+                <a className="position-relative nav-link active" data-toggle="tab" href="#">Home <i class="fa-solid fa-house"></i></a>
+            </li>
+            <li className="nav-item">
+                <a className="position-relative nav-link "data-toggle="tab" href="#">Productos <i class="fa-solid fa-shirt"></i></a>
             </li>
             <li className="nav-item">
                 <CartWidget/>
             </li>
             <li className="nav-item">
-                <a className="btn btn-primary position-relative"data-toggle="tab" href="#">Contacto</a>
+                <a className="position-relative nav-link "data-toggle="tab" href="#">Contacto <i class="fa-solid fa-phone"></i></a>
             </li>
         </ul>
-    )
+        </nav>)
 }
 
 export default NavBar
