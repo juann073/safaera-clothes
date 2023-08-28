@@ -1,26 +1,33 @@
 import CartWidget from "../CartWidget/CartWidget"
+import {NavLink} from "react-router-dom";
 
 const NavBar = () => {
     return (
     <header className="App-header">
-        <h1>SafaeraClothes</h1>
+        <NavLink to="/"><h1>SafaeraClothes</h1></NavLink>
         <nav className="fs-5">
             <ul className="grid gap-5 row-gap-3 nav nav-pills">
             <li className="nav-item">
-                <a className="position-relative nav-link text-light" data-toggle="tab" href="#">Home <i className="fa-solid fa-house"></i></a>
+                <NavLink className="position-relative nav-link text-light" data-toggle="tab" to="/">Home <i className="fa-solid fa-house"></i></NavLink>
             </li>
             <li className="nav-item">
-                <a className="position-relative nav-link text-light"data-toggle="tab" href="#">Products <i className="fa-solid fa-shirt"></i></a>
+                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/category/Ropa">Ropa <i className="fa-solid fa-shirt"></i></NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/category/Calzado">Calzado <i className="fa-solid fa-shoe-prints"></i></NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/category/Accesorio">Accesorios <i className="fa-solid fa-icons"></i></NavLink>
             </li>
             <li className="nav-item">
                 <CartWidget/>
             </li>
             <li className="nav-item">
-                <a className="position-relative nav-link text-light"data-toggle="tab" href="#">Contact <i className="fa-solid fa-phone"></i></a>
+                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/">Contact <i className="fa-solid fa-phone"></i></NavLink>
             </li>
         </ul>
         </nav>
-    </header>)
-}
+    </header>)}
 
-export default NavBar
+
+export default NavBar;

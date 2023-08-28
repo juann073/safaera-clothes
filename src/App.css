@@ -1,6 +1,7 @@
 body{
 background-image: url(./img/fondo.jpg);
 object-fit: cover;
+color: whitesmoke;
 }
 .App {
   margin: 0;
@@ -9,7 +10,7 @@ object-fit: cover;
   text-align: center;
 }
 
-.App-header {
+header {
   min-height: 100px;
   width: 100%;
   display: flex;
@@ -20,4 +21,53 @@ object-fit: cover;
   color: white;
   gap: 40px;
   opacity: 80%;
+}
+.Counter{
+width: 250px;
+height: 30px;
+background-color: transparent;
+margin:0;
+padding: 0;
+text-align: center;
+}
+button{
+background-color: rgb(255, 255, 255);
+border-radius: 8px;
+border: none;
+margin: 3px
+}
+
+.main {  
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "Cards Cards ."
+    "Cards Cards ."
+    "Cards Cards .";
+    margin-top: 100px;
+}
+
+
+.Cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:transparent;
+  border: 3px solid #ffffff;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  opacity: 90%;
 }

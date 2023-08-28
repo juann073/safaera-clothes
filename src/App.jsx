@@ -6,14 +6,17 @@ import {
   Route,
 } from "react-router-dom"
 import ItemListConteiner from './components/ItemListConteiner/ItemListConteiner';
+import ItemDetailConteiner from './components/ItemDetailConteiner/ItemDetailConteiner';
 
 function App() {
   return (
     <div className="App">
           <BrowserRouter>
-            <NavBar />  
+            <NavBar />   
             <Routes>
               <Route path="/" element={<ItemListConteiner/>}/>
+              <Route path="/category/:categoriaId" element={<ItemListConteiner/>}/>
+              <Route path="/item/:id" element={<ItemDetailConteiner/>}/>
             </Routes>
           </BrowserRouter>
     </div>
