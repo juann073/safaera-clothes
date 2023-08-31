@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import ItemCount from "../ItemCount/ItemCount"
+
 
 
 const Item = ({info}) =>{
@@ -9,10 +9,10 @@ const Item = ({info}) =>{
                 <img className="img-card" src={info.Image} alt="" />
                 <p className="tittle">{info.name}</p>
                 <p className="price">${info.price}</p>
-                <NavLink to="/item/:id"><button>Ver detalle</button> </NavLink>
-        
+                <NavLink to="/item/:id"><button>Detalle</button></NavLink>
             </div>
-       
+        
+        
 
         )
 }

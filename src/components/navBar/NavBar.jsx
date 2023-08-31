@@ -8,7 +8,7 @@ const NavBar = () => {
         <nav className="fs-5">
             <ul className="grid gap-5 row-gap-3 nav nav-pills">
             <li className="nav-item">
-                <NavLink className="position-relative nav-link text-light" data-toggle="tab" to="/">Home <i className="fa-solid fa-house"></i></NavLink>
+                <NavLink className="position-relative nav-link text-light" data-toggle="tab" to="/">Inicio <i className="fa-solid fa-house"></i></NavLink>
             </li>
             <li className="nav-item">
                 <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/category/Ropa">Ropa <i className="fa-solid fa-shirt"></i></NavLink>
@@ -23,7 +23,7 @@ const NavBar = () => {
                 <CartWidget/>
             </li>
             <li className="nav-item">
-                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/">Contact <i className="fa-solid fa-phone"></i></NavLink>
+                <NavLink className="position-relative nav-link text-light"data-toggle="tab" to="/">Contacto <i className="fa-solid fa-phone"></i></NavLink>
             </li>
         </ul>
         </nav>

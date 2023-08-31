@@ -57,6 +57,7 @@ margin: 3px
 
 
 .Cards{
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
