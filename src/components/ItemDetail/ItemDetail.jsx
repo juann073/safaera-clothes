@@ -1,10 +1,14 @@
-const ItemDetail = ({detail}) =>{
+export
+
+
+
+const ItemDetail = ({data}) =>{
     return(
         <div className="container">
             <div className="detail">
                 <img className="detail-image" src="" alt="" />
                 <div className="content">
-                    <h1>{detail.name}</h1>
+                    <h1>{data.name}</h1>
                 </div>
             </div>
         </div>

@@ -26,18 +26,18 @@ const NuevoArray =
 ]
 
 const ItemDetailConteiner = () =>{
-const [detail, setDetail] = useState([])
+const [data, setData] = useState([])
 useEffect(() => {
-    const getDetail = new Promise((resolve) => {
+    const getData = new Promise((resolve) => {
         setTimeout(() => {
             resolve(NuevoArray)
-        }, 2000);
+        }, 1000);
     })
-    getDetail.then(res => setDetail(res));
+    getData.then(res => setData(res));
 }, [])
     
     return(
-        <ItemDetail data={detail}/>
+        <ItemDetail data={data}/>
         )
 }
 
