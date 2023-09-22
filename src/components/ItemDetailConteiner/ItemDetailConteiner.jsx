@@ -1,7 +1,9 @@
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import NuevoArray from "../../productos";
+import productos from "../../productos";
+
+
 
 const ItemDetailConteiner = () => {
   const [data, setData] = useState({});
@@ -9,11 +11,11 @@ const ItemDetailConteiner = () => {
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(NuevoArray.find((item) => item.id === parseInt(id)));
-      }, 1000);
+        resolve(productos.find((item) => item.id === parseInt(id)));
+      }, 100);
     });
     getData.then((res) => setData(res));
-  }, []);
+  }, [id]);
 
   return <ItemDetail data={data} />;
 };

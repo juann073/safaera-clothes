@@ -18,7 +18,8 @@ export const ItemDetail = ({ data }) => {
           <p>${data.price}</p>
           <p>{data.detail}</p>
           {GotoCart ? (
-            <NavLink className="terminarCompra" to={'/cart'}>Terminar Compra</NavLink>
+            <NavLink className="position-relative nav-link text-dark border border-success-subtle rounded"
+            data-toggle="tab" to={'/cart'}>Terminar Compra</NavLink>
           ) : (
             <ItemCount inintial={1} stock={5} onAdd={onAdd} />
           )}

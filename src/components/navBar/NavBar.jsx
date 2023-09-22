@@ -1,6 +1,7 @@
 import CartWidget from "../CartWidget/CartWidget";
 import { NavLink } from "react-router-dom";
 
+
 const NavBar = () => {
   return (
     <header className="App-header">
@@ -10,7 +11,7 @@ const NavBar = () => {
       <nav className="fs-5">
         <ul className="grid gap-5 row-gap-3 nav nav-pills">
           <li className="nav-item">
-            <NavLink
+            <NavLink 
               className="position-relative nav-link text-light"
               data-toggle="tab"
               to="/"

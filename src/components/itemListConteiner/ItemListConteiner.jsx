@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
-import NuevoArray from "../../productos";
+import productos from "../../productos";
 
 const ItemListConteiner = () => {
   const [data, setData] = useState([]);
@@ -9,13 +9,13 @@ const ItemListConteiner = () => {
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(NuevoArray);
+        resolve(productos);
       }, 1000);
     });
     if (categoriaId) {
       getData.then((res) =>
         setData(
-          res.filter((NuevoArray) => NuevoArray.categoria === categoriaId)
+          res.filter((productos) => productos.categoria === categoriaId)
         )
       );
     } else {
@@ -31,4 +31,3 @@ const ItemListConteiner = () => {
 };
 
 export default ItemListConteiner;
-
