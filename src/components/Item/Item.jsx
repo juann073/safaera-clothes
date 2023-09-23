@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ItemCount from "../ItemCount/ItemCount";
+
 
 const Item = ({ info }) => {
   return (
